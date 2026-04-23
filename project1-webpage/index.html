@@ -1,0 +1,66 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rufus Cloud Server</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: #0a1628; color: #fff; }
+        nav { background: #0d1f3c; padding: 16px 40px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #2E75B6; }
+        nav .logo { font-size: 20px; font-weight: 700; color: #4da6ff; }
+        nav span { font-size: 13px; color: #8ab4d4; }
+        .hero { text-align: center; padding: 60px 20px 40px; }
+        .hero h1 { font-size: 36px; font-weight: 700; color: #4da6ff; margin-bottom: 12px; }
+        .hero p { font-size: 16px; color: #8ab4d4; max-width: 500px; margin: 0 auto 28px; line-height: 1.7; }
+        .badge { display: inline-block; background: #1a3a5c; color: #4da6ff; font-size: 13px; padding: 6px 16px; border-radius: 20px; border: 1px solid #2E75B6; margin-bottom: 32px; }
+        .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; max-width: 680px; margin: 0 auto 40px; padding: 0 20px; }
+        .card { background: #0d1f3c; border: 1px solid #1a3a5c; border-radius: 12px; padding: 20px 16px; text-align: center; }
+        .card .icon { font-size: 28px; margin-bottom: 10px; }
+        .card h3 { font-size: 14px; font-weight: 600; color: #4da6ff; margin-bottom: 6px; }
+        .card p { font-size: 12px; color: #8ab4d4; line-height: 1.5; }
+        .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; max-width: 500px; margin: 0 auto 40px; padding: 0 20px; }
+        .stat { background: #1a3a5c; border-radius: 8px; padding: 16px; text-align: center; }
+        .stat .num { font-size: 24px; font-weight: 700; color: #4da6ff; }
+        .stat .label { font-size: 11px; color: #8ab4d4; margin-top: 4px; }
+        footer { text-align: center; padding: 20px; border-top: 1px solid #1a3a5c; font-size: 12px; color: #8ab4d4; }
+    </style>
+</head>
+<body>
+    <nav>
+        <span class="logo">☁️ Rufus Cloud</span>
+        <span>Hosted on AWS EC2</span>
+    </nav>
+    <div class="hero">
+        <div class="badge">🟢 Server is Live</div>
+        <h1>Hello World! 🌍</h1>
+        <p>My name is Rufus Ayodele and this is my first cloud-hosted website, running on an AWS EC2 instance in the cloud!</p>
+        <div class="cards">
+            <div class="card">
+                <div class="icon">🖥️</div>
+                <h3>EC2 Instance</h3>
+                <p>t2.micro running Ubuntu on AWS</p>
+            </div>
+            <div class="card">
+                <div class="icon">🌐</div>
+                <h3>Nginx Server</h3>
+                <p>Serving this page to the world</p>
+            </div>
+            <div class="card">
+                <div class="icon">🔐</div>
+                <h3>IAM Secured</h3>
+                <p>Access controlled with AWS IAM</p>
+            </div>
+        </div>
+        <div class="stats">
+            <div class="stat"><div class="num">1</div><div class="label">EC2 Instance</div></div>
+            <div class="stat"><div class="num">24/7</div><div class="label">Uptime</div></div>
+            <div class="stat"><div class="num">AWS</div><div class="label">Cloud Provider</div></div>
+        </div>
+    </div>
+    <footer>Built by Rufus Ayodele — Junior Cloud Engineer | Powered by AWS EC2 & Nginx</footer>
+</body>
+</html>
